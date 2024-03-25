@@ -1,0 +1,55 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$os\
+$username\
+$directory\
+$conda\
+$git_branch\
+$git_state\
+$git_status\
+$time\
+$line_break\
+$character
+"""
+
+[character]
+disabled = false
+success_symbol = '[](bold green)'
+error_symbol = '[](bold red)'
+
+[os]
+disabled = false
+format = " "
+
+[username]
+disabled = false
+style_root = "black bold"
+style_user = "yellow bold"
+format = "[$user]($style) "
+show_always = true
+
+[line_break]
+disabled = false
+
+[directory]
+format = '[ $path](#d65d0e) '
+truncation_length = 3
+truncation_symbol = ".../"
+
+[conda]
+format = '[󰰑 $environment](bold #FFC0CB) '
+ignore_base = false
+
+
+[time]
+disabled = false
+time_format = "%R"
+format = "[󱑔 $time](#080808) "
+utc_time_offset = "+8"
+
+[git_branch]
+format = "on [$symbol$branch ]($style)"
+
+[git_state]
+format = "\\([$state( $progress_current/$progress_total)]($style)\\) "
