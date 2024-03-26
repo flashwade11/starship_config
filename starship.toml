@@ -5,6 +5,7 @@ $os\
 $username\
 $directory\
 $conda\
+$python\
 $git_branch\
 $git_state\
 $git_status\
@@ -53,3 +54,7 @@ format = "on [$symbol$branch ]($style)"
 
 [git_state]
 format = "\\([$state( $progress_current/$progress_total)]($style)\\) "
+
+[python]
+style = "bold #81A7DE"
+format = "via [${symbol}${pyenv_prefix}(${version} )(\\($virtualenv\\) )]($style)"
