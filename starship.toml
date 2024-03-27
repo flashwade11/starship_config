@@ -21,7 +21,13 @@ error_symbol = '[](bold red)'
 
 [os]
 disabled = false
-format = " "
+format = "$symbol"
+
+[os.symbols]
+Ubuntu = " "
+Macos = " "
+Linux = " "
+Windows = " "
 
 [username]
 disabled = false
