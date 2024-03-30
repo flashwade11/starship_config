@@ -16,7 +16,7 @@ $character
 
 [character]
 disabled = false
-success_symbol = '[](bold green)'
+success_symbol = '[](bold blue)'
 error_symbol = '[](bold red)'
 
 [os]
@@ -60,6 +60,20 @@ format = "on [$symbol$branch ]($style)"
 
 [git_state]
 format = "\\([$state( $progress_current/$progress_total)]($style)\\) "
+
+[git_status]
+conflicted = '🏳'
+ahead = '🏎💨 ${count}'
+behind = '😰'
+diverged = '😵'
+up_to_date = '✓'
+untracked = '❓${count} '
+stashed = '📦'
+modified = '📝 ${count} '
+staged = '[++\($count\)](green)'
+renamed = '👅'
+deleted = '🗑 ${count}'
+format = '([\[$all_status$ahead_behind\]]($style) )'
 
 [python]
 style = "bold #81A7DE"

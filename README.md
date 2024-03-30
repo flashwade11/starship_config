@@ -3,7 +3,7 @@
 
 If you want to use my configuration, you can follow commands as below:
 ```shell
-echo "export STARSHIP_CONFIG=~/config/starship/starship.toml" >> ~/.zshrc
+echo "export STARSHIP_CONFIG=~/.config/starship/starship.toml" >> ~/.zshrc
 git clone git@github.com:flashwade11/starship_config.git ~/.config/starship/
 source ~/.zshrc
 ```
